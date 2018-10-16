@@ -8,15 +8,15 @@
 
 <form action="/surveys/submitSurvey" method="POST">
 
-<input name="requestverificationtoken" type="hidden" value="545jk5fd_42">
+<input name="csrf_token" type="hidden" value="545jk5fd_42">
 
 
 <label for="firstname">Name</label>
-<input type="text" id="firstname" name="firstname" placeholder="f_name" required>
+<input type="text" id="firstname" name="f_name" placeholder="f_name" required>
 <br>
 
 <label for="lastname">Name</label>
-<input type="text" id="lastname" name="lastname" placeholder="l_name" required>
+<input type="text" id="lastname" name="l_name" placeholder="l_name" required>
 <br>
 
 <label for="email">Email</label>
@@ -37,7 +37,7 @@ age rang
 <br>
 <select name="age">
 <option value="10-17">-18</option>
-<option value="18-25">18-25</option>
+<option value="18-25">18-25</option> 
 <option value="25-50">+25</option>
 </select>
 <br>
@@ -48,12 +48,13 @@ project state
 <br>
 <input type="checkbox" name="project_done" value="done"> done
 <br>
-<input type="checkbox" name="project_undone" value="undone"> undone 
 
+<input type="file" name="screenshot" id="screenshot" value="Take screenshot" 
+onclick="screenshot" enctype="multipart/form-data">
 
 <br>
-<br>
 
+<br>
 <input type="submit" value="send">
 </form>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12867.013512354051!2d43.36916323446116!3d36.26976599180147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40079f23364917a5%3A0x1417938df53b4baf!2sBakhdida!5e0!3m2!1sen!2siq!4v1539436600916" width="425" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
